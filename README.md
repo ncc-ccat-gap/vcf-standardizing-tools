@@ -1,11 +1,5 @@
 # vcf-standardizing-tools
 
-## Document
-### picard (liftover)  
-https://broadinstitute.github.io/picard/command-line-overview.html#LiftoverVcf  
-### bcftools (norm)    
-https://samtools.github.io/bcftools/bcftools.html#norm  
-
 ## INSTALL
 
 ### Install picard
@@ -79,3 +73,11 @@ https://samtools.github.io/bcftools/bcftools.html#norm
     bgzip mutation_normalize.vcf
     tabix -p vcf mutation_normalize.vcf.gz
 
+
+## Reference document
+
+### picard (liftover)  
+https://broadinstitute.github.io/picard/command-line-overview.html#LiftoverVcf  
+
+### bcftools (norm)    
+https://samtools.github.io/bcftools/bcftools.html#norm  
