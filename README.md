@@ -1,37 +1,41 @@
 # vcf-standardizing-tools
 
-## INSTALL
-
-### Document
+## Document
 picard (liftover)  
 https://broadinstitute.github.io/picard/command-line-overview.html#LiftoverVcf  
 bcftools (norm)    
 https://samtools.github.io/bcftools/bcftools.html#norm  
 
+## INSTALL
+
 ### Install picard
-git clone https://github.com/broadinstitute/picard.git  
-cd picard   
-docker build -t picard .  
+    git clone https://github.com/broadinstitute/picard.git  
+    cd picard   
+    docker build -t picard .  
 
 ### Install bcftools 
-wget https://github.com/samtools/bcftools/releases/download/1.9/bcftools-1.9.tar.bz2  
-tar yxvf bcftools-1.9.tar.bz2  
-make  
-make install  
+    wget https://github.com/samtools/bcftools/releases/download/1.9/bcftools-1.9.tar.bz2  
+    tar yxvf bcftools-1.9.tar.bz2  
+    make  
+    make install  
 
 ### Install htslib  
-http://www.htslib.org/download/  
-tar yxvf htslib-1.9.tar.bz2  
-make  
-make install  
+    # Visit the following URL
+    http://www.htslib.org/download/  
+    # Download
+    tar yxvf htslib-1.9.tar.bz2  
+    make  
+    make install  
 
 ### Get chain file (Please refer to the credits)   
-wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz  
-guzip hg19ToHg38.over.chain.gz  
+    wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz  
+    guzip hg19ToHg38.over.chain.gz  
 
 ### Get Reference genome  
-https://gdc.cancer.gov/about-data/data-harmonization-and-generation/gdc-reference-files  
-GRCh38.d1.vd1.fa.tar.gz  
+    # Visit the following URL
+    https://gdc.cancer.gov/about-data/data-harmonization-and-generation/gdc-reference-files  
+    # Download 
+    GRCh38.d1.vd1.fa.tar.gz  
 
 ### Create Reference dictionary
     docker run \
