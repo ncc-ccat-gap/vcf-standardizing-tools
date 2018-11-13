@@ -1,9 +1,9 @@
 # vcf-standardizing-tools
 
 ## Document
-picard (liftover)  
+### picard (liftover)  
 https://broadinstitute.github.io/picard/command-line-overview.html#LiftoverVcf  
-bcftools (norm)    
+### bcftools (norm)    
 https://samtools.github.io/bcftools/bcftools.html#norm  
 
 ## INSTALL
